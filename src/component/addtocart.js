@@ -2,6 +2,7 @@ import React from 'react';
 
 var createReactClass = require('create-react-class');
 var Addtocart = createReactClass({
+    
     render:function(){
         return (
             <div className="card-action grey lighten-3">

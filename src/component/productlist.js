@@ -1,20 +1,71 @@
 import React from 'react';
 import Product from "../component/product";
+import datalist from '../assets/js/data.json';
 
 var createReactClass = require('create-react-class');
 var Productlist = createReactClass({
-    render:function(){
-        var products = this.props.list.map(function (list) {
+
+    getInitialState: function () {
+        return {
+            getitems: [],
+            items: [],
+        }
+    },
+    movetocart: function (data) {
+        this.setState(state => ({
+            items: [...state.items, data]
+        }));
+    },
+    render: function () {
+        // var dataitems = this.state.getitems;
+        var products = datalist.map(function (list) {
+            return <Product dataname={list} key={list.id} onClick={this.movetocart} />
+        }.bind(this));
+
+        var items = this.state.items.map(function (item) {
             return (
-                <div className="col s12 m3" key={list.id}>
-                    <Product dataname={list} />
+                <div className="card blue-grey darken-1" key={item.id}>
+                    <div className="card-content white-text">
+                        <span className="card-title">{item.name}</span>
+                        <p>{item.price}&nbsp;{item.currency}</p>
+                    </div>
+                    <div className="card-action">
+                        <a href="">Checkout</a>
+                    </div>
                 </div>
             )
-        })
+        });
+
+        var body = (
+            <div className="row">
+                <div className="col s12 m12">
+                    {items}
+                </div>
+            </div>
+        )
+
+        var empty = (
+            <div className="row">
+                <div className="col s12 m12">
+                    <div className="card blue-grey darken-1">
+                        <div className="card-content white-text">
+                            <span className="card-title">Empty Cart</span>
+                            <p>No Item inside Cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
 
         return (
             <div>
-                {products}
+                <div className="col s12 m9">
+                    {products}
+                </div>
+                <div className="col s12 m3">
+                    {items.length > 0 ? body : empty}
+                </div>
+
             </div>
         )
     },
