@@ -9,6 +9,8 @@ var Productlist = createReactClass({
         return {
             getitems: [],
             items: [],
+            total:0,
+            currency:'INR'
         }
     },
 
@@ -17,6 +19,17 @@ var Productlist = createReactClass({
         this.setState(state => ({
             items: [...state.items, data]
         }));
+        this.totalprice();
+    },
+
+    totalprice: function(data){
+        var total=0;
+        this.state.items.forEach(function(item, index) {
+            total += item.price;
+          });
+          this.setState({
+            total: total
+          })
     },
     
     render: function () {
@@ -68,6 +81,9 @@ var Productlist = createReactClass({
                 </div>
                 <div className="col s12 m3">
                     {items.length > 0 ? body : empty}
+                    <div>
+                        <h5>Total Price : {this.state.total} {this.state.currency}</h5>
+                    </div>
                 </div>
 
             </div>
