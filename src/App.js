@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Productlist from './component/productlist';
 
 var createReactClass = require('create-react-class');

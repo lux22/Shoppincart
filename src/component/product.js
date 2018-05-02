@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react';
 import PubSub from 'pubsub-js';
 import Productlist from '../component/productlist';
+import Cartlist from '../component/cart';
 import Addtocart from '../component/addtocart';
 
 

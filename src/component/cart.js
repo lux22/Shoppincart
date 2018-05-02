@@ -31,4 +31,4 @@ var Cartlist = createReactClass({
 
 })
 
-export default Product;
+export default Cartlist;
