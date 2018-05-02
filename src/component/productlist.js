@@ -11,17 +11,21 @@ var Productlist = createReactClass({
             items: [],
         }
     },
+
+    //adding product to item array
     movetocart: function (data) {
         this.setState(state => ({
             items: [...state.items, data]
         }));
     },
+    
     render: function () {
-        // var dataitems = this.state.getitems;
+        //Product list collection.
         var products = datalist.map(function (list) {
             return <Product dataname={list} key={list.id} onClick={this.movetocart} />
         }.bind(this));
 
+        //Displaying items added to cart.
         var items = this.state.items.map(function (item) {
             return (
                 <div className="card blue-grey darken-1" key={item.id}>
