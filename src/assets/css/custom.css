@@ -1,6 +1,7 @@
 .shop-img
 {
-    height: 160px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .page-footer-no-padding-top
@@ -10,5 +11,51 @@
 
 .padding-left-10
 {
-    padding-left: 10px !important;
+    padding-left: 20px !important;
 }
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+
+.input-field .prefix
+{
+    top:0.2rem;
+}
+
+.icon-margin-x-0
+{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.cart-empyt-color
+{
+    background: #4b616c;
+}
+
+.collection{
+    border:0px;
+}
+
+.collection .collection-item
+{
+    background: #4b616c;
+}
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-120 { font-size: 120px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

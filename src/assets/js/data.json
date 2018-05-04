@@ -1,6 +1,6 @@
  [{
          "id": 1,
-         "name": "United Color beniton",
+         "name": "Nike",
          "price": 499.99,
          "currency": "INR",
          "image": "images/01.jpg",
@@ -8,7 +8,7 @@
      },
      {
          "id": 2,
-         "name": "Adidas sports shoes",
+         "name": "Adidas sports",
          "price": 249.99,
          "currency": "INR",
          "image": "images/02.jpg",
@@ -16,7 +16,7 @@
      },
      {
          "id": 3,
-         "name": "Adidas",
+         "name": "Rebook",
          "price": 239.99,
          "currency": "INR",
          "image": "images/04.jpg",
@@ -24,7 +24,7 @@
      },
      {
          "id": 4,
-         "name": "PUMA sports",
+         "name": "Puma sports",
          "price": 119.99,
          "currency": "INR",
          "image": "images/06.jpg",
@@ -32,7 +32,7 @@
      },
      {
          "id": 5,
-         "name": "puma track",
+         "name": "Sketcher track",
          "price": 599.99,
          "currency": "INR",
          "image": "images/05.jpg",
@@ -45,5 +45,37 @@
          "currency": "INR",
          "image": "images/03.jpg",
          "url": "http://www.home24.de/re-concept/sessel-anna-stoff-olivgruen-779539"
-     }
+     },
+     {
+        "id": 7,
+        "name": "Mens Boots",
+        "price": 190.99,
+        "currency": "INR",
+        "image": "images/07.jpg",
+        "url": "http://www.home24.de/re-concept/sessel-anna-stoff-olivgruen-779539"
+    },
+    {
+        "id": 8,
+        "name": "Mens Formal",
+        "price": 199.99,
+        "currency": "INR",
+        "image": "images/08.jpg",
+        "url": "http://www.home24.de/re-concept/sessel-anna-stoff-olivgruen-779539"
+    },
+    {
+        "id": 9,
+        "name": "Brown Formals",
+        "price": 120.32,
+        "currency": "INR",
+        "image": "images/09.jpg",
+        "url": "http://www.home24.de/re-concept/sessel-anna-stoff-olivgruen-779539"
+    },
+    {
+        "id": 10,
+        "name": "Sneakers",
+        "price": 199.99,
+        "currency": "INR",
+        "image": "images/10.jpg",
+        "url": "http://www.home24.de/re-concept/sessel-anna-stoff-olivgruen-779539"
+    }
  ]

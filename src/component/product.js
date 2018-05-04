@@ -15,15 +15,15 @@ var Product = createReactClass({
                     <div className="card-image">
                         <img src={list.image} alt={list.name} className='shop-img' />
                     </div>
-                    <div className="card-content">
-                        <span className="card-title blue-text text-darken-2">{list.price}&nbsp;{list.currency}</span>
-                        <p>{list.name}</p>
+                    <div className="card-content margin-bottom-10">
+                        <span className="card-title blue-text text-darken-2">{list.name}</span>
+                        <p className="left"><i className="left material-icons icon-margin-x-0">attach_money</i>{list.price}</p>
+                        <p className="right"><i className="material-icons amber-text lighten-1">grade</i></p>
                     </div>
-                    <div className="card-action grey lighten-3">
-                <a class="waves-effect" onClick={this.addtocart}><i class="material-icons ">add_shopping_cart
+                    <div className="card-action red lighten-1">
+                        <a className="waves-effect white-text" onClick={this.addtocart}><i className="material-icons ">add_shopping_cart
 </i>&nbsp;Add Cart</a>
-            </div>
-                    {/* <Addtocart onClick={() => this.addtocart(this, list)} /> */}
+                    </div>
                 </div>
             </div>
 
