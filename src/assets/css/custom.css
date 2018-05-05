@@ -1,61 +1,149 @@
-.shop-img
-{
+.shop-img {
     height: 100px;
     object-fit: contain;
 }
 
-.page-footer-no-padding-top
-{
+.page-footer-no-padding-top {
     padding-top: 0px;
 }
 
-.padding-left-10
-{
+.padding-left-10 {
     padding-left: 20px !important;
 }
 
-.margin-bottom-10{
+.nav-icon-cart{
+    display: inline-block !important;
+}
+
+.cart-badge{
+    display: inline !important;
+    position: relative;
+    top: -12px;
+    padding:0 2px;
+}
+.cart-badge::after{
+    content:"" !important;
+}
+.margin-bottom-10 {
     margin-bottom: 10px;
 }
 
-.input-field .prefix
-{
-    top:0.2rem;
+.input-field .prefix {
+    top: 0.2rem;
 }
 
-.icon-margin-x-0
-{
+.icon-margin-x-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
 
-.cart-empyt-color
-{
+.cart-empyt-color {
     background: #4b616c;
 }
 
-.collection{
-    border:0px;
+.collection {
+    border: 0px;
 }
 
-.collection .collection-item
-{
+.collection .collection-item {
     background: #4b616c;
 }
 
+.sidenav .user-view {
+    padding-bottom: 3px;
+}
 
+.cart-money {
+    position: relative;
+    top: -5px;
+}
+
+.item-count-block {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.item-total {
+    font-size: 20px;
+}
+
+.footer-custom {
+    padding: 8px;
+    background: #546e7a;
+    color: white;
+}
+.sidenav li>a {
+    padding:0 8px;
+}
+.sidenav li>a:hover {
+    background-color: transparent;
+}
+
+.sidenav li > a > i, .sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"], .sidenav li > a > i.material-icons {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 32px 0 0;
+    width: 24px;
+    color: rgba(255, 255, 255, 0.54);
+}
+.sidenav li>a>i:hover {
+    color: rgba(238, 85, 75, 0.72);
+}
+
+
+/* .h3-mtop-0
+{
+   margin-top:0px;
+}
+
+.p-margin-bottom
+{
+    margin-bottom:12px;
+} */
 
 /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-120 { font-size: 120px; }
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-70 {
+    font-size: 70px;
+}
+
+.material-icons.md-120 {
+    font-size: 120px;
+}
 
 /* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
 
 /* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}

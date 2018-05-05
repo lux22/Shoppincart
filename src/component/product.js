@@ -1,16 +1,17 @@
 import React from 'react';
+import PubSub from 'pubsub-js';
 
 var createReactClass = require('create-react-class');
 var Product = createReactClass({
-
     addtocart: function () {
-        this.props.onClick(this.props.dataname);
+        // this.props.onClick(this.props.dataname);
+        PubSub.publish("addcart", this.props.dataname);
     },
 
     render: function () {
         var list = this.props.dataname;
         return (
-            <div className="col s12 m3" >
+            <div className="col s12 l6">
                 <div className="card hoverable">
                     <div className="card-image">
                         <img src={list.image} alt={list.name} className='shop-img' />
